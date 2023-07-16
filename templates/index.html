@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Proton</title>
     <link href="{{ url_for('static', path='/index.css') }}" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', path='/Proton.jpg') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
@@ -101,7 +102,7 @@
           </div>
           <div class="modal-body">
               <p class="text_modal">Цена РЖД август 2022 год: {{ price_2022 }}</p>
-              <p class="text_modal">Цена Proton август 2022 год с инфляцией: {{ price_forecast_inf }}</p>
+              <p class="text_modal">Цена Proton август 2023 год с инфляцией: {{ price_forecast_inf }}</p>
               <p class="text_modal">Разница цены РЖД с Proton: {{ delta_price }}</p>
           </div>
           <div class="modal-footer">
