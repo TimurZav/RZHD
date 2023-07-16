@@ -26,8 +26,7 @@ async def predict(
         destination: str = Form()
     ) -> _TemplateResponse:
 
-    path = "/home/timur/PycharmProjects/superset/data/rzhd_final/August22_vs_August23_with_cities.xlsx"
-    df = pd.read_excel(path)
+    df = pd.read_excel("August22_vs_August23_with_cities.xlsx")
     df = df.loc[(
             (df['month'] == month) &
             (df['type_van'] == type_van) &
